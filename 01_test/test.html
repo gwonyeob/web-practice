@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!--이 문서는 html 사용-->
+<html> <!--여기서부터 html문서 시작-->
+    <head>
+        <style type = "test/css">
+        /* course class에 적용 */
+        .course{ 
+            font-size: 12px;
+        }
+        /* p tag에 적용 */
+        p{
+            font-size: 14px;
+        }
+        </style>
+    </head> <!--문서 전체 젇보-->
+    <body> <!--문서 실제 내용 시작-->
+        <li class="course">(나권엽) - 클래스 소개</li>
+    </body>
+</html>
+
+<!-- 태그에는 1개 이상의 속성을 넣을 수 있음-->
+
+
+<!-- css언어 적용하는 방법 3가지
+
+1. 적용할 태그뎅 style속성으로 넣기(해당 태그에만 적용) -->
+<p style = "test-align:center;color:red">
+<!--  각각의 태그마다 적용해야 되서 쉽지 않음 
+
+2. HTML 문서 <head> 안에 <style> 태그로 넣기(전체 문서에 적용) -->
+
+<head>
+    <style type = "test/css">
+        /* course class에 적용 */
+        .course{ 
+            font-size: 12px;
+        }
+        /* p tag에 적용 */
+        p{
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<!-- 3. HTML 문서 <head>안에 CSS파일로 링크하기 -->
+<head>
+    <link rel="stylesheet" type = "test/css" href="test.css">
+</head>
