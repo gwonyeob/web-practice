@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td {
+            border : solid
+        }
+    </style>
+</head>
+<body>
+    <h1>권엽</h1>
+    <h6>권엽</h6>
+    <!--h1~h6 -> 제목 태그-->
+    <!--현업에서는 웹브라우저 호환성을 위해 이걸 안 쓰고 css style을 별도로 적용함-->
+    <p></p>
+    <!--p => 문단을 나타냄-->
+    <a href="https://velog.io/@apircity/posts" target = "_blank" ></a>
+    <!-- _self : 현재 브라우저에 띄움 / _blank : 새로운 브라우저 탭에 띄움(또는 브라우저 설정에 따라 새로운 브라우저 창)-->
+    <ol> <!-- 1. 2. 3. 이런 식으로-->
+        <li>아침 먹기</li>
+        <li>점심 먹기</li>
+        <li>저녁 먹기</li>
+    </ol>
+    <ul> <!-- 점으로 표시-->
+        <li>독서 하기</li>
+        <li>아무것도 안하기</li>
+        <li>낮잠 자기</li>
+    </ul>
+    <!-- <img src="dave.jpg" alt="나권엽"> -->
+    <!--src : 이미지 파일 위치, alt : 이미지 대체 텍스트 => 구글 SEO 문서 참고-->
+    <div></div>
+    <!-- division의 약자, html 문서의 특정 부분을 지정하는 데 사용-->
+    <!-- 화면에 별도로 표시되지는 않음-->
+    <h3>html5 table 태그</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>제목 열1</th>
+                <th>제목 열2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>내용 열1</td>
+                <td>내용 열2</td>
+            </tr>
+            <tr>
+                <td>내용 열3</td>
+                <td>내용 열4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>표의 마지막 열1</td>
+                <td>표의 마지막 열2</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--검색엔진으로 하여금 찾는 걸 도와줌-->
+    <!--thead : 제목으로 구성된 열들을 가진 행 표시-->
+    <!--tbody : 표의 내용을 나타내는 각 행들을 표시-->
+    <!--tfoot : 표의 마지막 행 표시-->
+    <!--thead, tbody, tfoot => html5에서 정의된 태그로 tr, td만 써도 상관없음-->
+    <h3>Form 테스트</h3>
+    <form action="login.html" method = "psot">
+        ID : <input type="text" name = "id" maxlength="10" minlength="3" autocomplete="on">
+        PW : <input type="text" name = "pw" autofocus>
+    </form>
+</body>
+</html>
